@@ -18,23 +18,25 @@ void	ft_print_comb(void)
 	int	b;
 	int	c;
 
-	a = 48 - 1;
-	while (++a <= 55)
+	a = '0';
+	while (a <= '7')
 	{
 		b = a;
-		while (++b <= 56)
+		while (++b <= '8')
 		{
-			c = b;
-			while (++c <= 57)
+			c = b + 1;
+			while (c <= '9')
 			{
-				write(1, &a, 1);
-				write(1, &b, 1);
-				write(1, &c, 1);
-				if (a != 55)
+				write (1, &a, 1);
+				write (1, &b, 1);
+				write (1, &c, 1);
+				if (a != '7' || b != '8' || c != '9')
 				{
-					write(1, ", ", 1);
+					write (1, ", ", 2);
 				}
+				c++;
 			}
 		}
+		a++;
 	}
 }
