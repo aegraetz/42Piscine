@@ -84,17 +84,3 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	}
 	return (str);
 }
-
-/*
-#include<stdio.h>
-int main()
-{
-    char str1[] = "hello";
-    char str2[] = "world";
-    char sep[] = ",,,";
-
-    char *strs[2] = {str1, str2};
-    char *totalstring = ft_strjoin(2, strs, sep);
-    printf("result is: %s\n", totalstring);
-}
-*/
